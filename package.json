@@ -4,9 +4,7 @@
   "description": "This is the try attempt",
   "main": "index.js",
   "scripts": {
-  
     "start": "node index.js"
-    
   },
   "author": "Syon",
   "license": "MIT",
