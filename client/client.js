@@ -1,9 +1,12 @@
 var name = prompt("What is your name")
 var input = prompt("what your age")
-
+var button;
 function setup() {
     noCanvas()
-
+button = createButton('Click to submit again')
+button.mousePressed(function() {
+location.reload()
+})
 }
 
 function fetchMe() {
