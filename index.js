@@ -10,5 +10,12 @@ app.use(express.static('client'))
 app.use(express.json())
 app.post('/api', function (req, res) {
     console.log(req.body)
+    
+
     res.send('Thanks for sending')
+    
+})
+app.get('/api', function(request, response) {
+response.send("<h1>Thanks for sending data</h1> ")
+
 })

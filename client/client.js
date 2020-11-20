@@ -5,7 +5,7 @@ function setup() {
     noCanvas()
 button = createButton('Click to submit again')
 button.mousePressed(function() {
-location.reload()
+location.reload();
 })
 }
 

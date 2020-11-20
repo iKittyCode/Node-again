@@ -1,4 +1,0 @@
-Hello everybody
-This is a test file
-For unix commands
-Syoon
