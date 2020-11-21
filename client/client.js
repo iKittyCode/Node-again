@@ -1,12 +1,13 @@
 var name = prompt("What is your name")
 var input = prompt("what your age")
 var button;
+var label = document.getElementById('label')
 function setup() {
     noCanvas()
-button = createButton('Click to submit again')
-button.mousePressed(function() {
-location.reload();
-})
+    button = createButton('Click to submit again')
+    button.mousePressed(function () {
+        location.reload();
+    })
 }
 
 function fetchMe() {
@@ -21,4 +22,12 @@ function fetchMe() {
         })
     })
 }
+
 fetchMe()
+query();
+async function query() {
+const api = await fetch('/api')
+const data = await api.json()
+console.log(data)
+
+}
