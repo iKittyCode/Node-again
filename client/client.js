@@ -1,5 +1,4 @@
-var name = prompt("What is your name")
-var input = prompt("what your age")
+var message = prompt("Whats your message")
 var button;
 var label = document.getElementById('label')
 function setup() {
@@ -17,8 +16,7 @@ function fetchMe() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            name: name,
-            age: input
+        message:message
         })
     })
 }
