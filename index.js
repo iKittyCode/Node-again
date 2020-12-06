@@ -1,7 +1,7 @@
 const { response } = require("express")
 var express = require("express")
 var app = express()
-var port = 8080 || PROCESS.env.PORT
+var port = 8080 || process.env.PORT
 var Datastore = require('nedb')
 var db = new Datastore({
     filename: "MyClients.db",
