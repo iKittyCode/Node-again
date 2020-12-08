@@ -32,7 +32,8 @@ console.log(data)
 for (var i  = 0; i < data.length; i++) {
 var root = document.createElement('div')
 var message = document.createElement('div')
-message.textContent = data[i].message
+
+message.textContent = data[i].name + ' : ' + data[i].message
 root.append(message)
 document.body.append(root)
 }

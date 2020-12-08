@@ -1,6 +1,3 @@
-const {
-    response
-} = require("express")
 var express = require("express")
 var app = express()
 var port = 8080 || process.env.PORT
