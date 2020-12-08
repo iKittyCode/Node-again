@@ -1,4 +1,6 @@
-const { response } = require("express")
+const {
+    response
+} = require("express")
 var express = require("express")
 var app = express()
 var port = 8080 || process.env.PORT
@@ -10,14 +12,14 @@ var db = new Datastore({
 app.listen(port, function () {
     console.log("😹Running at http://localhost:8080")
 })
-app.get('/api', function(req, res) {
-db.find({}, function(err, data) {
-    if (err) {
-    console.log("Error!!!!")
-    return;
-    }
-    res.json(data)
-})
+app.get('/api', function (req, res) {
+    db.find({}, function (err, data) {
+        if (err) {
+            console.log("Error!!!!")
+            return;
+        }
+        res.json(data)
+    })
 
 })
 app.use(express.static('client'))
